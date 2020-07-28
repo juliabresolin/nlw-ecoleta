@@ -1,0 +1,10 @@
+# all
+
+# backend
+backend/node_modules
+
+# frontend
+frontend/node_modules
+
+# mobile
+mobile/node_modules
