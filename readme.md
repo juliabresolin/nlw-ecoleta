@@ -34,7 +34,7 @@ After the merge of your pull request is done, you can delete you branch.
 
 ## <img src=".docs/label.svg" width="24px"> Run project
 
-This repository is a monorepo, so you can acess the instructions to run the project within each respective folder: <b><a href="">backend</a></b>, <b><a href="">frontend</a></b>, <b><a href="">mobile</a></b>!
+This repository is a monorepo, so you can acess the instructions to run the project within each respective folder: <b><a href="https://github.com/jbresolinn/nlw-ecoleta/tree/master/backend">backend</a></b>, <b><a href="https://github.com/jbresolinn/nlw-ecoleta/tree/master/frontend">frontend</a></b>, <b><a href="https://github.com/jbresolinn/nlw-ecoleta/tree/master/mobile">mobile</a></b>!
 
 ---
 
