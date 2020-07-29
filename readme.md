@@ -9,7 +9,7 @@
 
 ## <img src=".docs/label.svg" width="24px"> About
 
-Ecoleta is a marketplace that helps people find waste collection points efficiently. 
+Ecoleta is an open-source project of a marketplace that helps people find waste collection points efficiently. 
 
 It was developed during Next Level Week at <b><a href="https://github.com/Rocketseat">@rocketseat</a></b>, a week of total immersion in programming using the stack: NodeJS, React and React Native!
 
