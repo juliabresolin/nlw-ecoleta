@@ -69,7 +69,7 @@ export const Container = styled.div`
   main div a strong {
     flex: 1;
     text-align: center;
-    color: #FFF;
+    color: #fff;
   }
 
   main div a:hover {

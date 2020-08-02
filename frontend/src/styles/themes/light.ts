@@ -7,5 +7,7 @@ export default {
     secondaryHover: '#2FB86E',
     background: '#F0F0F5',
     text: '#6C6C80',
+    placeholder: '#A0A0B2',
+    blocks: '#FFFFFF',
   }
 }

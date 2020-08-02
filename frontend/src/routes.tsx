@@ -12,7 +12,7 @@ const Routes: React.FC<Props> = ({ toggleTheme }) => {
   return (
     <BrowserRouter>
       <Route render={ props => <Home toggleTheme={ toggleTheme }/> } path="/" exact />
-      <Route render={ props => <CreatePoint /> }path="/create-point" />
+      <Route render={ props => <CreatePoint toggleTheme={ toggleTheme }/> } path="/create-point" />
     </BrowserRouter>
   )
 }

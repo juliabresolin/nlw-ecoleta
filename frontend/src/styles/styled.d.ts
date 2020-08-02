@@ -10,6 +10,8 @@ declare module 'styled-components' {
       secondaryHover: string,
       background: string,
       text: string,
+      placeholder: string,
+      blocks: string,
     }
   }
 } 
