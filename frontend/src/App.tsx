@@ -7,7 +7,7 @@ import { ThemeProvider, DefaultTheme } from 'styled-components';
 import light from './styles/themes/light';
 import dark from './styles/themes/dark';
 
-import Home from './pages/Home';
+import Routes from './routes';
 
 function App() {
 
@@ -19,7 +19,7 @@ function App() {
   return (
     <ThemeProvider theme={ theme }>
     
-    <Home toggleTheme={ toggleTheme }/>
+    <Routes toggleTheme={ toggleTheme }/>
     <GlobalStyle />
     
     </ThemeProvider>

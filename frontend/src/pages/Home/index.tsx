@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { FiLogIn } from 'react-icons/fi';
 import { ThemeContext } from 'styled-components';
+import { Link } from 'react-router-dom';
 
 import { Container } from './styles';
 import Header from '../../components/Header';
@@ -24,12 +25,12 @@ const Home: React.FC<Props> =  ({ toggleTheme }) => {
           <div>
             <h1>Seu marketplace de coleta de resíduos.</h1>
             <p>Ajudamos pessoas a encontrarem pontos de coleta de forma eficiente.</p>
-            <a href="/cadastro">
+            <Link to="/create-point">
               <span>
                 <FiLogIn />
               </span>
               <strong>Cadastre um ponto de coleta</strong>
-            </a>
+            </Link>
           </div>
           <img src={ title === 'light' ? backgroundLight : backgroundDark } alt="Ecoleta Illustration"/>
       </main>
