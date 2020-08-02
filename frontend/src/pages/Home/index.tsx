@@ -1,18 +1,26 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { FiLogIn } from 'react-icons/fi';
-import './styles.css';
+import { ThemeContext } from 'styled-components';
 
-import logo from '../../assets/logo-light.svg';
-import background from '../../assets/home-background-light.svg';
+import { Container } from './styles';
+import Header from '../../components/Header';
 
-const Home = () => {
+import backgroundLight from '../../assets/home-background-light.svg';
+import backgroundDark from '../../assets/home-background-dark.svg';
+
+
+interface Props {
+  toggleTheme(): void;
+}
+
+const Home: React.FC<Props> =  ({ toggleTheme }) => {
+  const { title } = useContext(ThemeContext);
+  
   return (
-    <div id="page-home">
-      <div className="content">
-        <header>
-          <img src={ logo } alt="Logo Ecoleta"/>
-        </header>
-        <main>
+    <Container>
+      <Header toggleTheme={ toggleTheme } />
+
+      <main>
           <div>
             <h1>Seu marketplace de coleta de resíduos.</h1>
             <p>Ajudamos pessoas a encontrarem pontos de coleta de forma eficiente.</p>
@@ -23,11 +31,10 @@ const Home = () => {
               <strong>Cadastre um ponto de coleta</strong>
             </a>
           </div>
-          <img src={ background } alt="Ecoleta Illustration"/>
-        </main>
-        
-      </div>
-    </div>
+          <img src={ title === 'light' ? backgroundLight : backgroundDark } alt="Ecoleta Illustration"/>
+      </main>
+
+    </Container>
   );
 }
 
