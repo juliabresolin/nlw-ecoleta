@@ -1,51 +1,35 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FiArrowLeft } from 'react-icons/fi'
+import { Map, TileLayer, Marker } from 'react-leaflet';
 
 import { Container } from './styles';
 import Header from '../../components/Header';
 import Field from '../../components/Field';
 import GridItem from '../../components/GridItem';
 
+import api from '../../services/api';
+
 interface Props {
   toggleTheme(): void;
 }
 
-
-const items = [
-  {
-    "id": 1,
-    "title": "Lâmpadas",
-    "image_url": "http://localhost:3333/uploads/lampadas.svg"
-  },
-  {
-    "id": 2,
-    "title": "Pilhas e Baterias",
-    "image_url": "http://localhost:3333/uploads/baterias.svg"
-  },
-  {
-    "id": 3,
-    "title": "Papéis e papelão",
-    "image_url": "http://localhost:3333/uploads/papeis-papelao.svg"
-  },
-  {
-    "id": 4,
-    "title": "Resíduos Eletrônicos",
-    "image_url": "http://localhost:3333/uploads/eletronicos.svg"
-  },
-  {
-    "id": 5,
-    "title": "Resíduos Orgânicos",
-    "image_url": "http://localhost:3333/uploads/organicos.svg"
-  },
-  {
-    "id": 6,
-    "title": "Óleo de Cozinha",
-    "image_url": "http://localhost:3333/uploads/oleo.svg"
-  }
-];
+interface Item {
+  id: number;
+  title: string;
+  image_url: string;
+}
 
 const CreatePoint: React.FC<Props> = ({ toggleTheme }) => {
+
+  const [ items, setItems ] = useState<Item[]>([]);
+
+  useEffect(() => {
+    api.get('items').then(response => {
+      setItems(response.data);
+    })
+  }, []);
+
   return (
     <Container >
        <Header toggleTheme={ toggleTheme } />
@@ -90,6 +74,15 @@ const CreatePoint: React.FC<Props> = ({ toggleTheme }) => {
               <h2>Endereço</h2>
               <span>Selecione o endereço no mapa</span>
             </legend>
+
+            <Map center={[-26.2098259,  -52.6921009]} zoom={15}>
+            <TileLayer
+              attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+            <Marker position={[-26.2098259,  -52.6921009]}/>
+            </Map>
+
             <div className="field-group">
             <Field labelFor="uf" 
                    labelText="Estado (UF)"
