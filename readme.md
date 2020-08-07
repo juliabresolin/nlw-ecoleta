@@ -10,9 +10,9 @@
 </p>
 <br>
 <p align="center">
-  <a href="#-about-this-project">About this project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-what-is-pipefy">What is Pipefy?</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-what-is-ui-clone">What is UI Clone?</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-what-is-ecoleta">What is Ecoleta?</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-what-technologies-are-used">What technologies are used?</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-prototype">Prototype</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-running-the-project">Running the project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-license">License</a>
 </p>
@@ -59,7 +59,11 @@ The project has three modules: `backend(server)`, `frontend(web)` and `mobile`. 
   
 - **Mobile:** 
   - :warning: Coming soon
+<br><br>
 
+## <img src=".docs/label.svg" width="18px">&nbsp; License
+
+  This project is under the MIT license. See the [license](license.md) file more details.
 ---
 
 Made with ❤ by Julia Bresolin! <br>
