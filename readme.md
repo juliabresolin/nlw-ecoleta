@@ -64,6 +64,7 @@ The project has three modules: `backend(server)`, `frontend(web)` and `mobile`. 
 ## <img src=".docs/label.svg" width="18px">&nbsp; License
 
   This project is under the MIT license. See the [license](license.md) file more details.
+
 ---
 
 Made with ❤ by Julia Bresolin! <br>
