@@ -1,42 +1,66 @@
 <h1 align="center">
-    <img alt="ecoleta-header" title="ecoleta" src=".docs/logo.png" width="260px" />
+    <img alt="ecoleta-header" title="ecoleta" src=".docs/header.png" width="900px" />
 </h1>
-
+<br>
 <p align="center">
  <img alt="languages count" src="https://img.shields.io/github/languages/count/jbresolinn/nlw-ecoleta?color=34CB79"/>
   <img alt="repo size" src="https://img.shields.io/github/repo-size/jbresolinn/nlw-ecoleta?color=34CB79">
+  <img alt="license" src="https://img.shields.io/github/license/jbresolinn/nlw-ecoleta?color=34CB79">
+  <img alt="stars" src="https://img.shields.io/github/stars/jbresolinn/nlw-ecoleta?color=34CB79">
 </p>
+<br>
+<p align="center">
+  <a href="#-about-this-project">About this project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-what-is-pipefy">What is Pipefy?</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-what-is-ui-clone">What is UI Clone?</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-running-the-project">Running the project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-license">License</a>
+</p>
+<br>
 
-## <img src=".docs/label.svg" width="24px"> About
+## <img src=".docs/label.svg" width="18px">&nbsp; What is Ecoleta?
 
 Ecoleta is an open-source project of a marketplace that helps people find waste collection points efficiently. 
 
 It was developed during Next Level Week at <b><a href="https://github.com/Rocketseat">@rocketseat</a></b>, a week of total immersion in programming using the stack: NodeJS, React and React Native!
 
 You can learn more about Next Level Week <b><a href="https://nextlevelweek.com/">here!</a></b>
+<br><br>
 
-## <img src=".docs/label.svg" width="24px"> Design System
+## <img src=".docs/label.svg" width="18px">&nbsp; What technologies are used?
 
-You can view the layout of the project through <b><a href="https://www.figma.com/file/mYXr7gWbTx9Tojo6G46Qfy/Ecoleta-Booster?node-id=0%3A1">this link</a></b>, as long as you have a <a href="https://figma.com">Figma</a> account!
+For the development of Ecoleta, the stack was used as a basis: `node.js`, `reactjs` and `react native`.
 
-The entire layout of this project was developed by the UI Designer of Rocketseat <b><a href="https://instagram.com/tiagoluchtenberg">@tiagoluchtenberg</a></b>, but the dark mode was adapted by me, since it was not in the original design.
+Along with the stack, technologies such as restfull api, styled components, dark mode, hooks, api to search for adresses in real time (IBGE), among others, were used.
+<br><br>
 
+## <img src=".docs/label.svg" width="18px">&nbsp; Prototype
 
-## <img src=".docs/label.svg" width="24px"> How can I contribute?
+You can view the layout of the project through [this link](https://www.figma.com/file/mYXr7gWbTx9Tojo6G46Qfy/Ecoleta-Booster?node-id=0%3A1), as long as you have a [Figma](https://figma.com)account!
 
-- Fork this repository.
-- Create a branch with your feature: `git checkout -b my-feature`.
-- Commit your changes: `git commit -m "feat: my new feature"`.
-- Make a push for you branch: `git push origin my-feature`.
+The entire layout of this project was developed by the UI Designer of Rocketseat [@tiagoluchtenberg](https://instagram.com/tiagoluchtenberg), but the dark mode was adapted by me, since it was not in the original design.
+<br><br>
 
-After the merge of your pull request is done, you can delete you branch.
+## <img src=".docs/label.svg" width="18px">&nbsp; Running the project
 
+**:heavy_exclamation_mark: OBS:** This project was developed secifically with version 12 to Node.JS, make sure you have this version installed before running the project. If you have [nvm](https://github.com/nvm-sh/nvm) installed, just run **`nvm use`** in the root directory and it will be the correct version.
 
-## <img src=".docs/label.svg" width="24px"> Run project
+The project has three modules: `backend(server)`, `frontend(web)` and `mobile`. Before running the commands below, make sure that you are in the directory of the module you want to run.
 
-This repository is a monorepo, so you can acess the instructions to run the project within each respective folder: <b><a href="https://github.com/jbresolinn/nlw-ecoleta/tree/master/backend">backend</a></b>, <b><a href="https://github.com/jbresolinn/nlw-ecoleta/tree/master/frontend">frontend</a></b>, <b><a href="https://github.com/jbresolinn/nlw-ecoleta/tree/master/mobile">mobile</a></b>!
+- **Backend (Server):** 
+    - Go to the server folder: **`cd /backend`**;
+    - Install the dependencies: **`yarn`** or **`npm install`**;
+    - Create the database by running the following scripts: **`knex:migrate`** and **`knex:seed`**
+    - Run the project: **`yarn start`** or **`npm start`**;
+    - Make sure the server is running correctly by accessing: http://localhost:3333;
+  
+- **Frontend (Web):** 
+  - :warning: Coming soon
+  
+- **Mobile:** 
+  - :warning: Coming soon
 
 ---
 
 Made with ❤ by Julia Bresolin! <br>
-<small>[Follow me on social networks!](https://linktr.ee/juliabresolin)</small>
+[Follow me on social networks!](https://linktr.ee/juliabresolin)
