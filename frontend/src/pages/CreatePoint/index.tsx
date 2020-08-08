@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FiArrowLeft } from 'react-icons/fi'
 import { Map, TileLayer, Marker } from 'react-leaflet';
+import axios from 'axios';
 
 import { Container } from './styles';
 import Header from '../../components/Header';
@@ -20,14 +21,36 @@ interface Item {
   image_url: string;
 }
 
+interface GeonameResponse {
+  name: string;
+  countryId: string;
+
+}
+
 const CreatePoint: React.FC<Props> = ({ toggleTheme }) => {
 
   const [ items, setItems ] = useState<Item[]>([]);
+  const [ ufs, setUfs ] = useState<GeonameResponse[]>([]);
 
-  useEffect(() => {
+  useEffect(() => { 
     api.get('items').then(response => {
       setItems(response.data);
     })
+  }, []);
+
+  useEffect(() => {
+    axios.get('http://www.geonames.org/childrenJSON?geonameId=3469034').then( response => {
+      const { geonames } = response.data;
+      let statesTemp = [];
+
+      for(let i=0; i < geonames.length; i++) {
+        const { name, countryId } = geonames[i];
+
+        statesTemp.push({ name, countryId });
+      }
+
+      console.log(statesTemp);
+    }) 
   }, []);
 
   return (

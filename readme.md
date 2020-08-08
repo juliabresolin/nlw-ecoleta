@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="ecoleta-header" title="ecoleta" src=".docs/header.png" width="900px" />
+    <img alt="ecoleta-header" title="ecoleta" src=".docs/header.svg" width="900px" />
 </h1>
 <br>
 <p align="center">
@@ -20,7 +20,7 @@
 
 ## <img src=".docs/label.svg" width="18px">&nbsp; What is Ecoleta?
 
-Ecoleta is an open-source project of a marketplace that helps people find waste collection points efficiently. 
+Ecoleta is an open-source project of a marketplace that helps people find waste collection points efficiently.
 
 It was developed during Next Level Week at <b><a href="https://github.com/Rocketseat">@rocketseat</a></b>, a week of total immersion in programming using the stack: NodeJS, React and React Native!
 
@@ -47,17 +47,17 @@ The entire layout of this project was developed by the UI Designer of Rocketseat
 
 The project has three modules: `backend(server)`, `frontend(web)` and `mobile`. Before running the commands below, make sure that you are in the directory of the module you want to run.
 
-- **Backend (Server):** 
+- **Backend (Server):**
     - Go to the server folder: **`cd /backend`**;
     - Install the dependencies: **`yarn`** or **`npm install`**;
     - Create the database by running the following scripts: **`knex:migrate`** and **`knex:seed`**
     - Run the project: **`yarn start`** or **`npm start`**;
     - Make sure the server is running correctly by accessing: http://localhost:3333;
-  
-- **Frontend (Web):** 
+
+- **Frontend (Web):**
   - :warning: Coming soon
-  
-- **Mobile:** 
+
+- **Mobile:**
   - :warning: Coming soon
 <br><br>
 
